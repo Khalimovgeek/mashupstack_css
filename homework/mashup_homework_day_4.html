@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ABC</title>
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        padding-top: 80px; 
+        background-color: #f4f6f8;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background: #e8f9f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+
+    .profile {
+        width: 75%;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        position: relative;
+        overflow: auto;
+        min-height: 200px;
+    }
+
+
+    .profile img {
+        width: 160px;
+        float: left;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+
+    .id {
+        padding-right: 220px; 
+        text-align: center;
+    }
+
+    .id h3 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .id h4 {
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+
+    .contact {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 180px;
+        padding: 15px;
+        text-align: center;
+        border-left: 2px solid #ccc;
+    }
+
+    .contact h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .contact p {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <span>Company Contact Card</span>
+    </header>
+    <div class="profile">
+        <img src="img/image.png" alt="Employee">
+
+        <div class="id">
+            <h3>John Doe</h3>
+            <h4>Senior Software Engineer</h4>
+            <p>
+                Passionate developer with 6+ years of experience building scalable
+                web applications and backend systems.
+            </p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Info</h3>
+            <p>📞 +91 98765 43210</p>
+            <p>✉ john.doe@email.com</p>
+        </div>
+    </div>
+</body>
+</html>
