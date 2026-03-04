@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM Blog</title>
+    <style>
+        .main{
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        #title{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #author{
+            text-align: right;
+            padding-right: 40px;
+            font-size: 15px;
+        }
+        #content,.content2{
+            text-align: justify;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: large;
+        }
+        #content::first-line{
+            font-weight: bold;
+        }
+        #content::first-letter{
+            font-size: 40px;
+            font-weight: bold;
+            color: rgb(248, 50, 50);
+            text-transform: capitalize;
+        }
+        .quote{
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(198, 199, 200);
+            text-align: justify;
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+            margin: 30px;
+            font-size: large;
+        }
+        .links h4{
+            text-align: center;
+            font-size: large;
+        }
+        .links a{
+            text-decoration: none;
+            color: blue;
+        }
+        .links a:visited{
+            color: purple;
+        }
+        .links a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        .subheading{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-left: 30px;
+        }
+        #first + #second {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            font-size: large;
+        }
+        .quote blockquote::before{
+            content: "“";
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3 id="title">Building Clean UI with Modern CSS</h3>
+        <h5 id="author">Albin M</h5>
+        <p id="content">The beauty of modern CSS lies in its simplicity and power. With just a few lines of styling, you can transform plain content into something elegant and professional. From pseudo-elements to advanced selectors, CSS provides tools that allow developers to create visually appealing layouts without complex frameworks.</p>
+        <p class="content2">Designing a blog layout is one of the best exercises for mastering styling techniques. You can experiment with first-line emphasis, decorative first letters, structured quotes, and interactive links to enhance readability and user experience. These small details significantly improve how content is perceived by readers.</p>
+        <div class="quote">
+            <blockquote>
+                Consistency in design is not about perfection; it’s about creating a predictable and comfortable experience for the user.
+            </blockquote>
+        </div>
+        <p class="content2">
+            When adding links inside your blog, consider linking to helpful resources like MDN Web Docs or CSS Tricks for deeper learning. Well-styled links improve engagement and make navigation intuitive.
+        </p>
+
+        <div class="links">
+            <h4>Few links to refer</h4>
+
+            <ul type="circle">
+                <li><a href="https://www.w3schools.com/Css/">w3schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a></li>
+                <li><a href="https://www.geeksforgeeks.org/css/css-tutorial/">geeksforgeeks</a></li>
+            </ul>
+        </div>
+        <div class="subheading">
+            <h4 id="first">Introduction to Selectors</h4>
+            <h4 id="second">Advanced Combinators</h4>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
