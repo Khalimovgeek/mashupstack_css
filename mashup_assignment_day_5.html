@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: larger;
+        }
+        .headings h3+h3{
+            color: green;
+        }
+        .list ul li:first-child a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .paragraphs,.list{
+            text-align: justify;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="paragraphs">
+
+        <h3>Roses</h3>
+        <p>Roses are red.</p>
+        <p>Roses are beautiful.</p>
+    </div>
+
+    <div class="headings">
+        <h3>Hello</h3>
+        <h3>World</h3>
+    </div>
+
+    <div class="list">
+        <ul type = "circle">
+            <li><a href="https://www.facebook.com/">Link 1</a></li>
+            <li><a href="https://github.com/">Link 2</a></li>
+            <li><a href="https://www.mashupstack.com/">Link 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>
