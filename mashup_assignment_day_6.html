@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM Cart</title>
+    <style>
+        .product{
+            border: 1px solid gray;
+            width: 400px;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10%;
+        }
+        .product img{
+            width: 300px;
+            margin-top: 30px;
+            border: 2px solid rgb(0, 0, 0);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .product h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 200;
+        }
+        .product button{
+            border: none;
+            background-color: rgb(58, 58, 235);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            height: 30px;
+            width: 200px;
+            
+        }
+        .product button:hover{
+            background-color:  rgb(22, 22, 186);
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .product h3{
+                font-size: small;
+            }
+        }
+        @media only screen and (orientation: landscape) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="homework/img/image.png" alt="amg one">      
+        <h3>AMG One</h3>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>
