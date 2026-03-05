@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM Blog</title>
+    <style>
+        *{
+            font-size: large;
+        }
+        .featured{
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .blog{
+            border: none;
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin: 15px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .blog a{
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+
+        }
+        .blog h3 {
+            text-align: center;
+        }
+        .blog p {
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .blog a[href^="https"]{
+            color: red;
+
+        }
+        .blog img{
+            width: 70%;
+        }
+        .blog img[src$="jpg"]{
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+        }
+        .featured h2{
+            text-align: left;
+            padding-left: 10%;
+            font-size: 30px;
+        }
+        #blogs{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @media only screen and (max-width : 600px){
+            #blogs{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .blog{
+                width: 75%;
+
+            }
+            *{
+                font-size: small;
+            }
+            .featured h2{
+                text-align: center;
+            }
+
+        }
+        @media only screen and (orientation: portrait){
+            .featured{
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="featured">
+        <h2>Featured</h2>
+        <div id="blogs">
+            <div class="blog">
+                <h3>Exploring Modern CSS Techniques</h3>
+                <img src="css_day_6/css.jpg" alt="css-design.jpg">
+                <p>Modern CSS has evolved significantly over the years, giving developers powerful tools to create responsive and visually appealing websites. From Flexbox to Grid layouts, these technologies simplify complex designs and improve development efficiency.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Read more</a>
+
+            </div>
+            <div class="blog">
+                <h3>Getting Started with Responsive Web Design</h3>
+                <img src="css_day_6/css.png" alt="css-design.jpg">
+                <p>Responsive design ensures that websites look great on all devices, from large desktop screens to small mobile phones. By using flexible layouts, media queries, and scalable images, developers can create interfaces that adapt seamlessly to different screen sizes.</p>
+                <a href="https://www.w3schools.com/css/css_rwd_intro.asp">Read More</a>
+
+            </div>
+            <div class="blog">
+                <h3>Understanding Web Accessibility</h3>
+                <img src="css_day_6/wb_acc.jpg" alt="web-accesibility.jpg">
+                <p>Web accessibility focuses on designing websites that everyone can use, including people with disabilities. Implementing accessible design practices such as semantic HTML, proper contrast, and keyboard navigation makes the web more inclusive.</p>
+                <a href="http://example.com/accessibility-guide">Read more</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
