@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            margin: 0;
+        }
+
+        .title h3{
+            margin-top: 10%;
+            text-transform: uppercase;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            background-color: rgb(6, 220, 81);
+            color: white;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+        span button{
+            color: rgb(6, 220, 81);
+            background-color: white;
+            border: none;
+            padding: 5px 30px;
+            font-size: medium;
+        }
+        .login a{
+            color: white;
+        }
+        .Register {
+
+            background-color: rgba(22, 21, 21, 0.703);
+            color: white;
+            padding-left: 10px;
+            padding-right: 20px;
+            width: 50vw;
+            height: 100vh;
+        }
+        .Register button{
+            background-color: rgb(6, 220, 81);
+            border: none;
+            color: white;
+            padding: 5px 30px;
+            font-size: medium;
+        }
+        .reg{
+            font-size: larger;
+            margin-top: 30%;
+            margin-left: 20px;
+            justify-content: center;
+        }
+        #password,#username{
+            border: none;
+            width: 70%;
+            height: 25px;
+            padding: 5px;
+        }
+        span{
+            margin-top: 10px;
+        }
+        
+        #login{
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Register">
+        <div  class="title">
+            <h3>European Resuscitation Council</h3>
+        </div>
+        <div class="reg">
+            <h2>Welcome</h2>
+            <h4>Register for an ERC account here</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quod perferendis sequi debitis qui, quas totam? Maxime optio, laboriosam perspiciatis odit, officiis expedita architecto earum voluptatum sed ipsa eveniet ea.</p>
+            <button>Register Here</button>
+        </div>
+    </div>
+    <div class="login">
+        <h3>Or login to your account</h3>
+        <input type="text" name="username" placeholder="username" id="username">
+        <input type="password" name="password" placeholder="password" id="password">
+        <span><button id="login">Login</button> <a href="">Forgot password?</a></span>
+    </div>
+    
+    
+</body>
+</html>
